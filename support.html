@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+	<link rel="icon" href="favicon.ico" type="image/icon">
+    <title>Prostate Cancer Support Groups</title>
+</head>
+<body class="support">
+    <header>
+        <div class="box">
+		    <div class="media">
+                <a href="index.html">
+                    <img src="images/myLogo1.png" alt="Logo">
+                </a>
+            </div>
+            <div class="head1">
+                <div class="phone">
+                    <span class="label">Specialist Number:</span>
+                    <a href="tel:0800 477 678">0800 477 678</a>
+                </div>
+				
+                <div class="head2">
+                    <section class="hero">
+                        <h1>Support Groups</h1>
+                        <p>Connect with local support groups across New Zealand to find community, advice, and care throughout your prostate cancer journey.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="menu">
+                <div class="dropdown">
+                    <button class="dropbtn">Home</button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Prostate Cancer Information
+                    <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="info.html">Know the Basics</a>
+                        <a href="stage.html">Cancer Stages</a>
+                        <a href="diagnosis.html">Diagnosis and Symptoms</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">What We Do
+                    <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="about_us.html">About Us</a>
+                        <a href="support.html">Support Groups</a>
+                        <a href="research.html">Our Research</a>
+                    </div>
+                </div>
+        </div>
+
+        <div id="nav2">
+            <form class="wrapper" id="search-form">
+                <input type="text" id="site-search" placeholder="Search...">
+                <button type="submit">🔍</button>
+            </form>
+            <a href="https://prostate.org.nz/donations">
+                <button class="button donate" >Donate</button>
+            </a>
+            <button class="button language">Language</button>
+        </div>
+    </nav>
+    <main>
+        <div class="whole-main">
+            <div class="img-support image-hover .fade-in">
+                <div class="visible">
+                    <img  src="images/support-group.png" alt="support group" width="800" height="500">
+                </div>
+                <p>A range of free in-person and remote support services are available to help those diagnosed with prostate cancer, their families and whānau.
+
+                An extensive national network of trained volunteers provides holistic support, founded on mutual respect and a shared understanding of the cancer journey. The contact details for your local Support Coordinator is listed on this page. Some groups meet on a regular basis, some informally as part of their Prost-FIT classes. Please don’t hesitate to contact the group coordinator directly to find out more.
+                </p>
+            </div>
+            <section class="support-group-search">
+                <h2>Find a Support Group</h2>
+                <form id="supportSearchForm">
+                    <label for="city">Search by city or region:</label>
+                    <div class="search-wrapper">
+                    <input list="cities" id="city" name="city" placeholder="Enter a city name..." required>
+                    <button type="submit">🔍</button>
+                    </div>
+                    <datalist id="cities">
+                    <option value="Kaitaia">
+                    <option value="Whangarei">
+                    <option value="Auckland - Rodney">
+                    <option value="Auckland - North Shore">
+                    <option value="Auckland - Central">
+                    <option value="Auckland - East">
+                    <option value="Auckland - West">
+                    <option value="Auckland Women's Group">
+                    <option value="Auckland - South">
+                    <option value="Cambridge">
+                    <option value="Whangamata">
+                    <option value="Waihi">
+                    <option value="Hamilton">
+                    <option value="Katikati">
+                    <option value="Tauranga">
+                    <option value="Rotorua">
+                    <option value="Whakatane">
+                    <option value="Gisborne">
+                    <option value="Hawke's Bay Partners">
+                    <option value="Hawke's Bay">
+                    <option value="New Plymouth">
+                    <option value="Wanganui">
+                    <option value="Palmerston North">
+                    <option value="Masterton">
+                    <option value="Wellington Pals">
+                    <option value="Lower Hutt">
+                    <option value="Marlborough">
+                    <option value="Nelson">
+                    <option value="Greymouth/Westport">
+                    <option value="Rangiora">
+                    <option value="Christchurch AM Group">
+                    <option value="Christchurch PM Group">
+                    <option value="Selwyn">
+                    <option value="Ashburton">
+                    <option value="Timaru">
+                    <option value="Selwyn Men's Coffee Chat Group">
+                    <option value="Selwyn Women's Coffee Chat Group">
+                    <option value="Dunedin">
+                    <option value="Dunedin Partners Network">
+                    <option value="Central Otago 'Alexandra'">
+                    <option value="Central Otago 'Roxburgh'">
+                    <option value="Central Otago 'Queenstown'">
+                    <option value="Invercargill">
+                    </datalist>
+            </form>
+
+            <div id="supportResult" class="support-result"></div>
+            </section>
+            <div class="sub_ai">
+                    <form class="subscription">
+                        <p class="left">Subscription - Enter your email</p>
+                        <div class="input-wrap">
+                            <input type="email" placeholder="example: john123@gmail.com" name="email" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </main>
+    <div class="floating-chat">
+        <button id="chat-toggle">💬 Chat</p>
+        <div class="chat-box" id="chat-box">
+            <iframe src="https://copilotstudio.microsoft.com/environments/Default-ef475ff3-7cd1-4fa3-ba77-f63824f7c37c/bots/cr4d1_prostateCancerBuddy1/webchat?__version__=2" frameborder="0" style="width: 100%; height: 400px;"></iframe>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="terms-img">
+            <div class="footer-img">
+                <img src="images/myLogo1.png" width="150" height="150">
+            </div>
+            <div class="terms">
+                <p>Terms and conditions</p>
+                <p>Privacy</p>
+                <p>&copy; 2025 Prostate Aware NZ</p>
+            </div>
+        </div>
+        <div class="details">
+            <div class="contact">
+              <div class="line">
+                <span class="label">Phone Number:</span>
+                <a href="tel:0223910336">022 391 0336</a>
+              </div>
+              <div class="line">
+                <span class="label">Email:</span>
+                <a href="mailto:mam3518@arastudent.ac.nz">mam3518@arastudent.ac.nz</a>
+              </div>
+            </div>
+          </div>
+    </footer>
+    <script src="web.js"></script>
+	<script>
+        AOS.init();
+    </script>
+</body>
+</html>
